@@ -85,7 +85,10 @@ section img {
   max-width: 100%
 }
 
+
+
 h1, h2, h3, h4, h5, h6 {
+  padding-top: 20px;
   font-weight: normal;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color: #b5e853;
@@ -131,6 +134,7 @@ dt {
 
 ul li {
   list-style: none;
+  	margin-bottom: 12px;
 }
 
 ul li:before {
