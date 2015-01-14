@@ -198,6 +198,7 @@ td {
 .btn {
   display: inline-block;
   background: -webkit-linear-gradient(top, rgba(181,232,83, 1), rgba(181,232,83, 0.9));
+  background: -moz-linear-gradient(top, rgba(181,232,83, 1), rgba(181,232,83, 0.9));
 
   padding: 8px 18px;
   color: rgba(255, 255, 255, 1);
@@ -208,7 +209,8 @@ td {
 }
 
 .btn:hover {
-  background: -webkit-linear-gradient(bottom, rgba(181,232,83, 1), rgba(181,232,83, 0.9));
+	background: -webkit-linear-gradient(bottom, rgba(181,232,83, 1), rgba(181,232,83, 0.9));
+	background: -moz-linear-gradient(bottom, rgba(181,232,83, 1), rgba(181,232,83, 0.9));
 }
 
 .btn .icon {
