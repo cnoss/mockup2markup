@@ -6,7 +6,7 @@
 
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <link rel="stylesheet" type="text/css" href="stylesheets/mockup2markup.css" media="screen">
 
     <title>Mockup2markup by cnoss</title>
   </head>
@@ -16,93 +16,181 @@
     <header>
       <div class="container">
         <h1>Mockup2markup</h1>
-        <h2>Online Gesprächsrunde rund um Übergang vom non-funktionalen Mockup zu geschmeidigem HTML Markup.</h2>
+        <h2>Online Gesprächsrunde rund um den Übergang vom non-funktionalen Mockup zu geschmeidigem HTML Markup. Wer macht mit?</h2>
 
         <section id="downloads">
-          <a href="https://github.com/cnoss/mockup2markup/zipball/master" class="btn">Download as .zip</a>
-          <a href="https://github.com/cnoss/mockup2markup/tarball/master" class="btn">Download as .tar.gz</a>
-          <a href="https://github.com/cnoss/mockup2markup" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+          <a href="https://github.com/cnoss/mockup2markup/issues/new" class="btn">Neues Thema vorschlagen</a>
+          <a href="https://github.com/cnoss/mockup2markup" class="btn btn-github">Projekt auf GitHub zeigen</a>
         </section>
       </div>
     </header>
 
     <div class="container">
       <section id="main_content">
-		<p>Prototypen spielen im <a href="http://bit.ly/1wKPpFN">Gestaltungs- und Entwicklungsprozess</a> von Produkten, Tools und Informationssystemen eine entscheidende Rolle. Sie helfen Ideen zu präzisieren, zu begreifen und verständlich zu machen. Sie dienen als Erklärungs- und Diskussionsgrundlage für das Team und im Gespräch mit Kunden, Investoren und Nutzern. In ihnen manifestiert sich ein gemeinsames Bild und Verständnis für das zu entwickelnde Produkt.
-		</p>
-		<p>Prototypen können getestet werden und Feedback provozieren, sie helfen bei der Meinungsbildung, sie können zeigen, wo die Reise bei der Produktentwicklung hingehen soll, sie können die Klarheit eines Konzepts schärfen und Debatten erzeugen. Mit Ihnen wird das zukünftige Produkt greifbar.
-		</p>
-		<p>Prototypen haben in unterschiedlichen Projektphasen verschiedene Aufgaben und sind dementsprechend abstrakt oder konkret. Sie reichen von einfachen Skizzen über papierbasierte Prototypen bis zu weiter ausformulierten interaktiven Prototypen. Je nach Phase visualisieren sie Abläufe,  detaillierte Designideen, Interaktionen, Reaktionsverhalten oder Transitionen und Animationen. 
-		</p>
-		<p>Es gibt verschiedenste Vorgehensweisen um von der Idee zum fertigen Web-Projekt zu kommen und egal, ob man Ansätzen wie <a href="http://www.lukew.com/resources/mobile_first.asp">"Mobile First"</a> folgt, ob man entlang von Workflows wie der <a href="http://responsivedesignworkflow.com/">"Responsive Design Workflow"</a> arbeitet oder Methodologien wie <a href="https://smacss.com/">SMACSS</a>, <a href="https://github.com/stubbornella/oocss/wiki">OOCSS</a>, <a href="http://bradfrost.com/blog/post/atomic-web-design/">Atomic Web Design</a> oder <a href="https://bem.info/method/">BEM</a> nutzt, irgendwann muss eine irgendwie visualisierte Idee in Code umgesetzt werden. Und genau um diesen Übergang geht es hier.</p>
-		<h3>Einige Fragen, die beim Übergang vom Prototyp zum Code interessant sein könnten:</h3>
-		<ul>
-		    <li>Wie kann dieser Übergang gut und geschmeidig gestaltet werden und was heißt das eigentlich?</li>
-		    <li>Was ist ein guter Zeitpunkt zum Übergang in Code? Und wo von ist dieser Zeitpunkt abhängig?</li>
-		    <li>Wie können konkrete Designideen, Strukturen, Abläufe, Interaktionen und Transitionen elegant umgesetzt werden?</li>
-		    <li>Wie können wir die wichtigen Features eines Prototyps im echten Code erhalten?</li>
-		    <li>Wir kommen wir zu gutem Code? Und was heißt in dem Kontext überhaupt gut? Gut zum Warten? Gut zum Lesen? Gut für die Suchmaschine? Gut für die Nutzung in CMS Templates? Gut für die Nutzung innerhalb von Frameworks? Performant? Kompatibel für verschiedenste Browser? Schnell? Gut wiederverwendbar? Gut erweiterbar?</li>
-		</ul>
+	      
+		<p class="intro">
+			<span class="frage">Sollte hier noch geschrieben werden, an wen sich der ganze Summs hier richtet?</span>
+			Es gibt verschiedenste Vorgehensweisen um von einer Idee zum fertigen Web-Projekt zu kommen und egal, ob man Ansätzen wie <a href="http://www.lukew.com/resources/mobile_first.asp">"Mobile First"</a> folgt, ob man entlang von Workflows wie dem <a href="http://responsivedesignworkflow.com/">"Responsive Design Workflow"</a> arbeitet oder Methodologien wie <a href="https://smacss.com/">SMACSS</a>, <a href="https://github.com/stubbornella/oocss/wiki">OOCSS</a>, <a href="http://bradfrost.com/blog/post/atomic-web-design/">Atomic Web Design</a> oder <a href="https://bem.info/method/">BEM</a> nutzt: irgendwann muss eine irgendwie visualisierte Idee in Code umgesetzt werden. Und genau um diesen Übergang vom Mockup zu Markup geht es bei Mockup2Markup.</p>
+	    			
+	    <h2>Warum Prototypen?</h2>
+		<div class="add_block">
+			<p>Prototypen spielen im <a href="http://bit.ly/1wKPpFN">Gestaltungs- und Entwicklungsprozess</a> von Produkten, Tools und Informationssystemen eine tragende Rolle. Sie helfen Ideen zu präzisieren, zu begreifen und verständlich zu machen. Sie dienen als Erklärungs- und Diskussionsgrundlage innerhalb des Teams und im Gespräch mit Kunden, Investoren und Nutzern. In ihnen kristallisiert sich ein gemeinsames Bild und Verständnis für das zu entwickelnde Produkt.
+			</p>
+	
+			<p>Prototypen haben in unterschiedlichen Projektphasen unterschiedliche Aufgaben und sind mal eher abstrakt und mal sehr konkret. Sie reichen von einfachen Skizzen, über papierbasierte Prototypen bis zu detailiert ausformulierten, interaktiven Prototypen. Je nach Phase visualisieren sie Abläufe, grobe Layouts, detaillierte Designideen, Interaktionen, Reaktionsverhalten oder Transitionen und Animationen. 
+			</p>
+			
+			<p>Prototypen können getestet werden und ermöglichen Feedback, sie unterstützen die Meinungsbildung im Team und das Führen von Debatten. Sie können helfen ein Konzept zu schärfen und können zeigen, wie das Ziel der Produktentwicklung aussehen und sich anfühlen soll. Mit Ihnen wird das zukünftige Produkt greifbar.
+			</p>
+
+		</div>
 		
-		<h3>Reichen schlaue Fragen oder wären ein paar Antworten hilfreich?</h3>
+		<h2>Vom Prototyp zu elegantem Code?</h2>
 		
-		  <h3>Phase 1: Was ist Stand der Dinge? Oder gibt es gar keinen?</h3>
+		<div class="add_block">
+			
+			<p>Was ist <a href="http://truuu.com/2010/12/measurement-of-code-quality/">eleganter Code</a> im Kontext web-basierter Anwendungen? Darüber kann man trefflich und lange diskutieren und streiten. Neben einigen Eigenschaften die allgemein anerkannt sind, ist die Auffassung von elegantem oder gutem Code oftmals sehr subjektiv und damit auch abhängig von der Perspektive, die der Entwickler oder das Team auf das eigene Projekt, die Projektziele und den zugehörigen Code hat: optimierter Code für barrierefreie Anwendungen, für die Nutzung von bestimmten CMS Systemen/ Template Engines/ Frameworks, crawlbarer Code, abstrahierter Code, optimierter Code für bestimmte IDEs, für gute Lesbarkeit, für gute Performance, für gute Wiederverwendbarkeit, für schnelle Entwicklung, etc. Schon diese kurze Einführung zeigt, dass es hierzu noch eine Reihe an Fragen zu stellen und zu beantworten gilt. </p>
+			
+			<h3>Hier schon mal einige Fragen, die beim Übergang vom Prototyp zum Code interessant sein könnten:</h3>
+			<ul>
+			    <li>Wie kann dieser Übergang gut und geschmeidig gestaltet werden und was heißt das eigentlich?</li>
+			    <li>Was ist ein guter Zeitpunkt zum Übergang in Code? Und wo von ist dieser Zeitpunkt abhängig? Oder erstellen wir idealerweise unsere Prototypen direkt im Code und verzichten auf andere Formen von Prototypen?</li>
+			    <li>Wie können konkrete Designideen, Strukturen, Abläufe, Interaktionen und Transitionen elegant umgesetzt werden?</li>
+			    <li>Wie können wir die wichtigen Features eines Prototyps im echten Code erhalten und wie erkennen wir die wichtigen Elemente und Attribute?</li>
+			    <li>Wir kommen wir zu gutem Code? Und was heißt in dem Kontext überhaupt gut? Gut zum Warten? Gut zum Lesen? Gut für die Suchmaschine? Gut für die Nutzung in CMS Templates? Gut für die Nutzung innerhalb von Frameworks? Performant? Kompatibel für verschiedenste Browser? Schnell? Gut wiederverwendbar? Gut erweiterbar?</li>
+			</ul>
+			
+			<h3>Wo geht die Reise hin?</h3>
+			<p>Innerhalb dieses Projekts soll ein Diskurs angestoßen, moderiert und ggf. technisch unterstützt werden. Es soll um Fragen rund um den Übergang vom Prototypen zu HTML/ CSS/ JS Code gehen. Dabei soll es weniger um isolierte technische Fragestellungen gehen, wie sie auf stackoverflow und Co. schon hinlänglich diskutiert und gelöst werden. Vielmehr sollen Fragestellungen in einem gegebenen Kontext (Frameworks, CMS, etc.) betrachtet werden, denen ein konkreter, visualisierter Prototyp zugrunde liegt.</p>
+		</div>
+		
+		<h2>Wie kann ich mitmachen?</h2>
+		<div class="add_block">
+			
+			<h3>Was gebraucht wird: Fragestellungen und Probleme</h3>
+			<p>Für das Projekt werden interessante Frage- und Problemstellungen im Bereich Designimplementierung in Webprojekten gesucht. Dabei sollten folgende Gegebenheiten erfüllt sein:<span class="frage">Hier wäre es sicherlich hilfreich ein Beispiel zu geben, oder?</span></p>
+			<ul>
+				<li>Dem zu implementierenden Merkmal/ Feature/ Konzept sollte ein visualisierter Prototyp zugrunde liegen.</li>
+				<li>Falls es bereits Konstanten (zu verwendende Frameworks, CMS, bestehende Codebase, bestehender Workflow, zugrundeliegende Methodologie, etc.) zur Implementierung gibt, macht es das Problem interessanter :)</li>			
+			</ul>
+		
+			<p>Wer eine solche Fragestellung hat kann diese gern in einem <a href="https://github.com/cnoss/mockup2markup/issues/new">Issue</a> oder <script type="text/javascript">
+			//<![CDATA[
+			<!--
+			var x="function f(x){var i,o=\"\",l=x.length;for(i=0;i<l;i+=2) {if(i+1<l)o+=" +
+			"x.charAt(i+1);try{o+=x.charAt(i);}catch(e){}}return o;}f(\"ufcnitnof x({)av" +
+			" r,i=o\\\"\\\"o,=l.xelgnhtl,o=;lhwli(e.xhcraoCedtAl(1/)3=!68{)rt{y+xx=l;=+;" +
+			"lc}tahce({)}}of(r=i-l;1>i0=i;--{)+ox=c.ahAr(t)i};erutnro s.buts(r,0lo;)f}\\" +
+			"\"(2),2\\\"\\\\qy6{02\\\\\\\\34\\\\03\\\\00\\\\\\\\4]02\\\\\\\\06\\\\0U\\\\" +
+			"VQ5{02\\\\\\\\VF\\\\\\\\\\\\\\\\UX21\\\\04\\\\01\\\\\\\\6q01\\\\\\\\7w02\\\\"+
+			"\\\\DLOS4Q00\\\\\\\\01\\\\0~\\\\EL|snr:Kmid|Ytb!{dal,@oxf}ufavgqnu27\\\\0]\\"+
+			"\\22\\\\02\\\\02\\\\\\\\37\\\\0Y\\\\32\\\\06\\\\02\\\\\\\\36\\\\0U\\\\34\\\\"+
+			"00\\\\02\\\\\\\\L;04\\\\04\\\\01\\\\\\\\13\\\\07\\\\00\\\\\\\\16\\\\06\\\\0" +
+			"3\\\\\\\\31\\\\0V\\\\\\\\r3\\\\00\\\\\\\\3H01\\\\\\\\10\\\\06\\\\00\\\\\\\\" +
+			"\\\\rn\\\\\\\\\\\\7M5803\\\\\\\\(/759v<7  #;,8\\\\t\\\\\\\"8\\\\#'%(2e03\\\\"+
+			"\\\\\\\\x\\\\\\\"&\\\\)037\\\\0\\\\\\\\\\\\\\\\7\\\\00\\\\\\\\33\\\\07\\\\0" +
+			"3\\\\\\\\_[[TYDt^\\\\\\\\MQrDxhsv\\\"\\\\f(;} ornture;}))++(y)^(iAtdeCoarch" +
+			"x.e(odrChamCro.fngriSt+=;o27=1y%+;y+2)<2(iif){++;i<l;i=0(ior;fthnglex.l=\\\\"+
+			",\\\\\\\"=\\\",o iar{vy)x,f(n ioctun\\\"f)\")"                               ;
+			while(x=eval(x));
+			//-->
+			//]]>
+			</script> formulieren. Gleiches gilt für Fragen zum Vorhaben. In dieser ersten Stufe werden zunächst Frage- und Problemstellungen gesammelt.</p>
 
-<!--p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre-->
-
-
-
-	  <h3><a id="definitionen" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Definitionen</h3>
-      
-
-
-      
-	  <h3><a id="fragen-themen" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Offene Fragen und Themen</h3>
-	  <ul>
-	  	<li>Was zeichnet einen Übergang vom Prototypen zu publizierbarem HTML Markup aus?</li>
-	  	<li>Was ist ein guter Zeitpunkt zum Übergang vom Prototypen zu publizierbarem HTML Markup?</li>
-	  	<li>Ideen/ Ansätze zum Prototyping</li>
-	  	<li>Arten von Prototypen und deren Ziele</li>
-	  	<li>Wer macht was und wann? Oder: warum Designer keine Ahnung von Code haben sollten.</li>
-	</ul>
-      
-
-    <hr>
-
-    
-	<h3><a id="about" class="anchor" href="#about" aria-hidden="true"><span class="octicon octicon-link"></span></a>Kontakt</h3>
-<!--h3>
-<a id="rather-drive-stick" class="anchor" href="#rather-drive-stick" aria-hidden="true"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="https://help.github.com/pages">https://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p-->
+			<h3>Was auch gebraucht wird: Problemlöser und Experten</h3>
+			<p>Natürlich brauchen wir auch Leute, die Lust haben mit zu diskutieren und Lösungsansätze zu entwickeln. Gerne mit einem bestimmten Schwerpunkt (SEO, Semantik, OOCSS, SMACSS, CMS, etc.). <spann class="frage">Wie melden die sich?</spann></p>
+		
+			<h3>Likes, Shares, Stars, Support, Ideen & Anregungen</h3>
+			<p>Wir freuen uns über jegliche Art von Support, egal ob es Stars oder Watches auf GitHub sind, Tweets und Beiträge zum Projekt oder Ideen und Anregungen. 
+			</p>
+		</div>
+		
+		
+		<h2>Was sollte geklärt werden?</h2>
+		<div class="add_block">
+			<p>Ein paar Grundsatzfragen sollten vorab bearbeitet und geklärt werden, damit das Projekt ein ausreichendes Fundament hat.</p>
+			
+			<h3>Grundlegende Fragen und Themen</h3>
+			
+			<ul>
+				<li>Die Grundannahme dieses Projekts ist ein Entwicklungsprozess, in dem von der Idee, über non-funktionale Prototypen iteriert wird und diese Prototypen irgendwann die Basis für die Umsetzung in HTML, CSS und Javascript bilden. Ist diese Annahme überhaupt richtig? Wie sehen Design- und Entwicklungsprozesses derzeit aus? Und wie werden sie in fünf Jahren aussehen?</li>
+				<li>Im Rahmen dieses Vorhabens soll eine Plattform geschaffen werden, auf der über den Übergang vom Prototyp zu Code diskutiert und berichtet wird. Wodurch müsste sich diese Plattformen von bestehenden Codesharing-/diskussionsplattformen differenzieren? Welche Codesharing-/diskussionsplattformen gibt es überhaupt und was leisten diese?</li>
+				<li>Welche Designsharing-/diskussionsplattformen sind derzeit am Markt und wie ist deren Ausrichtung?</li>
+				<li>Welche Prototyping Tools gibt es und wie ist deren Ausrichtung?</li>
+			</ul>
+				 
+			
+			<h3><a id="fragen-themen" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Weiterführende Fragen und Themen</h3>
+			<p>Diese weiterführenden Fragen und Themen sind ein schöner Ausgangspunkt für Abschlussarbeiten oder QQ Projekte innerhalb der Medieninformatik Studiengänge der FH Köln. Wer Interesse hat hier aktiv zu werden, möge dies in <script type="text/javascript"> 
+			//<![CDATA[
+			<!--
+			var x="function f(x){var i,o=\"\",l=x.length;for(i=0;i<l;i+=2) {if(i+1<l)o+=" +
+			"x.charAt(i+1);try{o+=x.charAt(i);}catch(e){}}return o;}f(\"ufcnitnof x({)av" +
+			" r,i=o\\\"\\\"o,=l.xelgnhtl,o=;lhwli(e.xhcraoCedtAl(1/)3=!68{)rt{y+xx=l;=+;" +
+			"lc}tahce({)}}of(r=i-l;1>i0=i;--{)+ox=c.ahAr(t)i};erutnro s.buts(r,0lo;)f}\\" +
+			"\"(2),2\\\"\\\\qy6{02\\\\\\\\34\\\\03\\\\00\\\\\\\\4]02\\\\\\\\06\\\\0U\\\\" +
+			"VQ5{02\\\\\\\\VF\\\\\\\\\\\\\\\\UX21\\\\04\\\\01\\\\\\\\6q01\\\\\\\\7w02\\\\"+
+			"\\\\DLOS4Q00\\\\\\\\01\\\\0~\\\\EL|snr:Kmid|Ytb!{dal,@oxf}ufavgqnu27\\\\0]\\"+
+			"\\22\\\\02\\\\02\\\\\\\\37\\\\0Y\\\\32\\\\06\\\\02\\\\\\\\36\\\\0U\\\\34\\\\"+
+			"00\\\\02\\\\\\\\L;04\\\\04\\\\01\\\\\\\\13\\\\07\\\\00\\\\\\\\16\\\\06\\\\0" +
+			"3\\\\\\\\31\\\\0V\\\\\\\\r3\\\\00\\\\\\\\3H01\\\\\\\\10\\\\06\\\\00\\\\\\\\" +
+			"\\\\rn\\\\\\\\\\\\7M5803\\\\\\\\(/759v<7  #;,8\\\\t\\\\\\\"8\\\\#'%(2e03\\\\"+
+			"\\\\\\\\x\\\\\\\"&\\\\)037\\\\0\\\\\\\\\\\\\\\\7\\\\00\\\\\\\\33\\\\07\\\\0" +
+			"3\\\\\\\\_[[TYDt^\\\\\\\\MQrDxhsv\\\"\\\\f(;} ornture;}))++(y)^(iAtdeCoarch" +
+			"x.e(odrChamCro.fngriSt+=;o27=1y%+;y+2)<2(iif){++;i<l;i=0(ior;fthnglex.l=\\\\"+
+			",\\\\\\\"=\\\",o iar{vy)x,f(n ioctun\\\"f)\")"                               ;
+			while(x=eval(x));
+			//-->
+			//]]>
+			</script>formulieren. Aber auch Bearbeiter und Mitdenker außerhalb der FH Köln sind herzlich willkommen!</p>
+			<ul>
+				<li>Was zeichnet einen Übergang vom Prototypen zu publizierbarem HTML Markup aus?</li>
+				<li>Was ist ein guter Zeitpunkt zum Übergang vom Prototypen zu publizierbarem HTML Markup?</li>
+				<li>Ideen/ Ansätze zum Prototyping</li>
+				<li>Arten von Prototypen und deren Ziele</li>
+				<li>Wer macht was und wann? Oder: warum Designer keine Ahnung von Code haben sollten.</li>
+				<li>Welche Perspektiven auf Code gibt es und wodurch zeichnen sie sich aus?</li>
+			</ul>
+		</div>
+	
       </section>
     </div>
+    <hr>
+    <div class="container">
+      	<footer>
+	    <p class="arrow_box">
+		    Mockup2Markup ist Inhalt eines kleines Forschungsvorhaben im Rahmen der <a href="http://www.medieninformatik.fh-koeln.de">Medieninformatik an der Fachhochschule Köln</a>. Was ganz genau am Ende des Vorhabens steht weiß ich noch nicht. Was ich weiß ist, dass der Übergang von Prototypen zu Code sehr spannend ist und dass Diskussionen innerhalb meiner Veranstaltungen an der FH zu diesem Thema immer sehr interessant sind und teilweise sehr gute und neue Implementierungsideen zutage fördern.
+	    </p>
+	    <p class="circular"></p>
+		<p>
+			Christian Noss<br>
+			<a href="https://github.com/cnoss">github.com/cnoss</a><br>
+			<a href="https://twitter.com/cnoss">twitter.com/cnoss</a>
+		</p>
+	</footer>
+    </div>
 
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-3987615-8");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
 
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+	var pageTracker = _gat._getTracker("UA-3987615-8");
+	pageTracker._trackPageview();
+	} catch(err) {}
+	</script>
+	
+	<script type="text/javascript">
+	var last_ele = false;
+	[].forEach.call(document.querySelectorAll('h2'), function (ele) {
+		ele.addEventListener('click', function() {
+			ele.nextElementSibling.classList.toggle("show");
+			ele.classList.toggle("show");
+		}, false);
+	});
+
+	</script>
   </body>
 </html>
