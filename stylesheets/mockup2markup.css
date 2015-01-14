@@ -31,7 +31,7 @@
 }
 
 #main_content h2:after{
-	content: url('/images/pfeilchen.svg');
+	content: url('../images/pfeilchen.svg');
 	position: absolute;
 	right: 0;
 	top: 20px;
@@ -106,5 +106,5 @@ hr {
 	border-radius: 60px;
 	-webkit-border-radius: 60px;
 	-moz-border-radius: 60px;
-	background: url("/images/cn.jpg") no-repeat;
+	background: url("../images/cn.jpg") no-repeat;
 }
