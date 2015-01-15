@@ -108,3 +108,14 @@ hr {
 	-moz-border-radius: 60px;
 	background: url("../images/cn.jpg") no-repeat;
 }
+
+figure{
+	padding: 0 0 20px 0;
+	margin: 0;
+}
+
+figcaption{
+	color: #aaa;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}

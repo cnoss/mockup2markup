@@ -66,7 +66,7 @@ header h1:before {
 header h2 {
   font-size: 18px;
   font-weight: 300;
-  color: #666;
+  color: #aaa;
 }
 
 #downloads .btn {
@@ -155,6 +155,11 @@ ul li:before {
   margin-left: -37px;
   margin-right: 21px;
   line-height: 16px;
+}
+
+ul.complete li:before{
+	content: "…";
+	margin-right: 30px;
 }
 
 blockquote {

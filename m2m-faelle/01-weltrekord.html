@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/mockup2markup.css" media="screen">
+
+    <title>Mockup2markup by cnoss // 01 Schlaue Marginalspalten</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Mockup2markup</h1>
+        <h2>#01 Schlaue Marginalspalten</h2>
+        <a class="btn" href="http://cnoss.github.io/mockup2markup/">zur Startseite</a>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+	      
+		<p class="intro">
+			Ein sehr schöner Lösungsansatz entstand innerhalb einer Implementierungsdiskussion im Rahmen des Module Web-basierte Anwendungen 1 im <a href="www.medieninformatik.fh-koeln.de">Studiengang Medieninformatik an der FH Köln</a>. <br>Die Ausgangslage war hier ein Entwurf einer eher textlastigen Unterseite einer Website. Der gestalterische Grundgedanke war hier die Aufteilung in eine Haupt- und zwei Marginalspalten, wie man es bei Printlayouts häufig sieht.</p>
+	    			
+	    <h2>Layout</h2>
+		<div class="add_block">
+			<figure>
+				<img src="01-weltrekord/layout.jpg">
+				<figcaption>Großes Headerbild, darunter jede Menge Fließtext, der mit Hilfe einer Hauptspalte und zwei Marginalspalten strukturiert wird.</figcaption>
+			</figure>
+		</div>
+		
+		<h2>Fragestellung</h2>
+		
+		<div class="add_block">			
+			<p>Wie lassen sich die Marginalspalten elegant abbilden? Ein offensichtlicher Ansatz wäre das Anlegen von drei Spalten, diesen floaten zu lassen und den Content darin zu verteilen. Aus verschiedenen Gründen ist diese Variante allerdings nicht optimal. In Zuge der Lösungsfindung war es in diesem Fall hilfreich, sich die Funktion der Marginalinhalte zunächst zu verdeutlichen.</p>
+			
+			<p>Die Inhalte in den Marginalspalten haben einen Bezug zum Inhalt der Hauptspalte. Darum sollten sie semantisch entsprechend zugehörig sein. Diese Zugehörigkeit soll aber auch über das Layout transportiert werden, also sollten sie vertikal möglichst nah am inhaltlichen Bezugspunkt in der Hauptspalte positioniert werden. Wir gehen hierbei von beliebigem Inhalt aus, so dass eine Platzierung via <code>"top"</code> oder <code>"margin"</code> nicht zielführend ist.</p>
+		</div>
+		
+		<h2>Lösungsansatz</h2>
+		
+		<div class="add_block">
+			<p>Um der Anforderung gerecht zu werden, den Content möglichst im Fluss zu halten, wurden die Marginalinhalte zunächst in <code>aside</code>-Elemente gepackt und mit einer Klasse ausgezeichnet.</p>
+			<p><pre>
+&lt;h1&gt;Headline&lt;/h1&gt;
+&lt;p&gt;Haupttext&lt;/p&gt;
+&lt;div class="marginalie_rechts"&gt;Marginaltext&lt;/div&gt;
+&lt;p&gt;weitere Haupttext&lt;/p&gt;
+&lt;div class="marginalie_rechts"&gt;Marginaltext&lt;/div&gt;</pre></p>
+			<p>Der Grundgedanke ist dann, eine Hauptspalte zu definieren und die Marginalinhalte nach rechts und links heraus zu ziehen.
+		</div>
+	
+      </section>
+    </div>
+    <hr>
+    <div class="container">
+      	<footer>
+	    <p class="arrow_box">
+		    Mockup2Markup ist Inhalt eines kleines Forschungsvorhaben im Rahmen der <a href="http://www.medieninformatik.fh-koeln.de">Medieninformatik an der Fachhochschule Köln</a>. Was ganz genau am Ende des Vorhabens steht weiß ich noch nicht. Was ich weiß ist, dass der Übergang von Prototypen zu Code sehr spannend ist und dass Diskussionen innerhalb meiner Veranstaltungen an der FH zu diesem Thema immer sehr interessant sind und teilweise sehr gute und neue Implementierungsideen zutage fördern.
+	    </p>
+	    <p class="circular"></p>
+		<p>
+			Christian Noss<br>
+			<a href="https://github.com/cnoss">github.com/cnoss</a><br>
+			<a href="https://twitter.com/cnoss">twitter.com/cnoss</a><br>
+			<a href="https://www.xing.com/profile/Christian_Noss">xing.com/profile/Christian_Noss</a>
+		</p>
+	</footer>
+    </div>
+
+
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+	var pageTracker = _gat._getTracker("UA-3987615-8");
+	pageTracker._trackPageview();
+	} catch(err) {}
+	</script>
+	
+	<script type="text/javascript">
+	var last_ele = false;
+	[].forEach.call(document.querySelectorAll('h2'), function (ele) {
+		ele.addEventListener('click', function() {
+			ele.nextElementSibling.classList.toggle("show");
+			ele.classList.toggle("show");
+		}, false);
+	});
+	
+	[].forEach.call(document.querySelectorAll('h2'), function (ele) {
+			ele.nextElementSibling.classList.toggle("show");
+			ele.classList.toggle("show");
+	});
+
+	</script>
+  </body>
+</html>
