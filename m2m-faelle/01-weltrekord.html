@@ -47,14 +47,16 @@
 		
 		<div class="add_block">
 			<p>Um der Anforderung gerecht zu werden, den Content möglichst im Fluss zu halten, wurden die Marginalinhalte zunächst in eigene Container gepackt und mit einer Klasse ausgezeichnet.</p>
-			<p><pre>
+			<pre>
 &lt;h1&gt;Headline&lt;/h1&gt;
 &lt;p&gt;Haupttext&lt;/p&gt;
 &lt;div class="marginalie_rechts"&gt;Marginaltext&lt;/div&gt;
 &lt;p&gt;weitere Haupttext&lt;/p&gt;
-&lt;div class="marginalie_rechts"&gt;Marginaltext&lt;/div&gt;</pre></p>
+&lt;div class="marginalie_rechts"&gt;Marginaltext&lt;/div&gt;</pre>
+
 			<p>Der Grundgedanke war dann, eine Hauptspalte zu definieren und die Marginalinhalte nach rechts und links heraus zu ziehen. Damit sitzen die Marginalinhalte rechts und links neben dem Hauptinhalt und in der Vertikalen bleiben sie im Dokumentfluss, also dem Hauptinhalt zugeordnet. 
-				<pre><code>/* Hauptspalte in die Mitte schieben */
+			
+			<pre><code>/* Hauptspalte in die Mitte schieben */
 #wrap > article {
 	width: 460px;
 	margin-left: 240px;
@@ -70,9 +72,10 @@
 	margin-left: 480px;
 	width: 220px;
 }</code></pre>
-			<a href="http://codepen.io/cnoss/pen/ByWrGq" class="btn">Schritt 1 als CodePen anschauen</a>
+				<a href="http://codepen.io/cnoss/pen/ByWrGq" class="btn">Schritt 1 als CodePen anschauen</a>
+			</p>
 			
-			<p>Jetzt galt es den Negativraum zu eliminieren, den die Marginalinhalte in der Hauptspalte hinterlassen haben. Dazu definieren wir die Höhe der Marginalinhalte einfach mit <code>0</code>.</p>
+			<p>Jetzt galt es den Negativraum zu eliminieren, den die Marginalinhalte in der Hauptspalte hinterlassen haben. Dazu definieren wir die Höhe der Marginalinhalte einfach mit <code>0</code>.
 				<pre><code>.marginalie_links {
 	margin-left: -240px;
 	height: 0;
@@ -83,7 +86,8 @@
 	height: 0;
 	width: 220px;
 }</code></pre>			
-			<a href="http://codepen.io/cnoss/pen/zxZaBL" class="btn">Schritt 2 als CodePen anschauen</a>
+				<a href="http://codepen.io/cnoss/pen/zxZaBL" class="btn">Schritt 2 als CodePen anschauen</a>
+			</p>
 			<p>Damit waren die Anforderungen erfüllt und das Problem recht elegant gelöst. Im nächsten Schritt könnten jetzt noch Regeln ergänzt werden, die das Reaktionsverhalten der Spalten organisieren. Auch das lässt sich mit dem gegebenen Ansatz sehr leicht umsetzen. Eine Umsetzung könnte sich hier an der Idee von Thierry Koblentz "<a href="http://www.smashingmagazine.com/2012/03/22/device-agnostic-approach-to-responsive-web-design/">Device Agnostic Approach To Responsive Design</a>" orientieren und zwei Content-bezogene Breakpoints setzen. Unterhalb des ersten Breakpoints könnte die linke Marginalspalte mit der Hauptspalte zusammenfließen und unterhalb des zweiten Breakpoints könnten beide Marginalspalten in der Hauptspalte aufgehen. Falls die Inhalte beider, oder auch nur einer Marginalspalte eine eher geringe Relevanz haben, könnten diese auch ab einem bestimmten Breakpoint ausgeblendet werden, um den Focus auf dem Hauptinhalt zu lassen.</p>
 			<p>Hier das CSS für den ersten Breakpoint:
 				<pre><code>@media (max-width:950px){
@@ -106,8 +110,9 @@
 	}
 }</code></pre>
 				<a href="http://codepen.io/cnoss/pen/WbpYKP" class="btn">letzten Schritt als CodePen anschauen</a>
-				
 			</p>
+		</div>
+		
 		<h2>Vor- und Nachteile der Lösung</h2>
 		
 		<div class="add_block">
