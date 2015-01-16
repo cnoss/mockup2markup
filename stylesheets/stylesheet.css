@@ -39,7 +39,7 @@ li {
 header {
   background: rgba(0, 0, 0, 0.1);
   width: 100%;
-  border-bottom: 1px dashed #b5e853;
+  border-bottom: 1px dashed #7c0;
   padding: 20px 0;
   margin: 0 0 40px 0;
 }
@@ -50,7 +50,7 @@ header h1 {
   margin: 0 0 0 -40px;
   font-weight: bold;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: #b5e853;
+  color: #7c0;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
                0 0 5px rgba(181, 232, 83, 0.1),
                0 0 10px rgba(181, 232, 83, 0.1);
@@ -67,6 +67,12 @@ header h2 {
   font-size: 18px;
   font-weight: 300;
   color: #aaa;
+}
+
+header p{
+	margin-bottom: 30px;
+	color: #eaeaea;
+	font-weight: normal;
 }
 
 #downloads .btn {
@@ -92,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 20px;
   font-weight: normal;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: #b5e853;
+  color: #7c0;
   letter-spacing: -0.03em;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
                0 0 5px rgba(181, 232, 83, 0.1),
@@ -189,7 +195,7 @@ table {
 
 th {
   text-align: left;
-  border-bottom: 1px dashed #b5e853;
+  border-bottom: 1px dashed #7c0;
   padding: 5px 10px;
 }
 
@@ -203,8 +209,8 @@ td {
 
 .btn {
   display: inline-block;
-  background: -webkit-linear-gradient(top, rgba(181,232,83, 1), rgba(181,232,83, 0.9));
-  background: -moz-linear-gradient(top, rgba(181,232,83, 1), rgba(181,232,83, 0.9));
+  background: -webkit-linear-gradient(top, rgba(119, 204, 0, 1), rgba(119, 204, 0, 0.9));
+  background: -moz-linear-gradient(top, rgba(119, 204, 0, 1), rgba(119, 204, 0, 0.9));
 
   padding: 8px 18px;
   color: rgba(255, 255, 255, 1);
@@ -212,14 +218,13 @@ td {
   font-weight: bold;
   font-size: 13px;
   text-decoration: none;
-  
-
-
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.8);
 }
 
 .btn:hover {
-	background: -webkit-linear-gradient(bottom, rgba(181,232,83, 1), rgba(181,232,83, 0.9));
-	background: -moz-linear-gradient(bottom, rgba(181,232,83, 1), rgba(181,232,83, 0.9));
+	background: -webkit-linear-gradient(bottom, rgba(119, 204, 0, 1), rgba(119, 204, 0, 0.9));
+	background: -moz-linear-gradient(bottom, rgba(119, 204, 0, 1), rgba(119, 204, 0, 0.9));
+	box-shadow: 0 0 3px 3px rgba(0, 0, 0, 1);
 }
 
 .btn .icon {
