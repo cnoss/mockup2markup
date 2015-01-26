@@ -119,3 +119,19 @@ figcaption{
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
+
+.step{
+	background: url("../images/step-1.svg") no-repeat;
+	background-size: 60px 60px;
+	min-height: 50px;
+	padding-left: 70px;
+	margin-top: 20px;
+}
+
+.step-1{ background-image: url("../images/step-1.svg"); color: #4A90E2;}
+.step-2{ background-image: url("../images/step-2.svg"); color: #7ED321; }
+.step-3{ background-image: url("../images/step-3.svg"); color: #d16; }
+
+header h1{
+	margin-bottom: 30px;
+}
