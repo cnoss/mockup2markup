@@ -1,0 +1,121 @@
+.frage{
+	background-color: #d16;
+	display: block;
+	padding: 5px 5px 8px 40px;
+	margin: 10px 0;
+	position: relative;
+}
+
+.frage:before{
+	content: "?";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 10px;
+	font-size: 24px;
+	font-weight: bold;
+	opacity: 0.5;
+}
+
+#main_content h2{
+	border-top: 1px dashed #b5e853;
+	position: relative;
+}
+
+#main_content h2:hover{
+	cursor: pointer;	
+}
+
+#main_content .intro{
+	padding-bottom: 20px;
+}
+
+#main_content h2:after{
+	content: url('../images/pfeilchen.svg');
+	position: absolute;
+	right: 0;
+	top: 20px;
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+h2.show:after{
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+.add_block{
+	max-height: 0;
+	overflow: hidden;
+	-webkit-transition: max-height 0.5s ease-out;
+    transition: max-height 0.5s ease-out;
+}
+
+.add_block.show{
+	max-height:4000px;
+	-webkit-transition: max-height 0.5s ease-in;
+    transition: max-height 0.5s ease-in;
+}
+
+.add_block p:last-child, .add_block ul:last-child{
+	padding-bottom: 40px;
+}
+
+hr {
+  height: 0;
+  border: 0;
+  border-bottom: 1px dashed #b5e853;
+  color: #b5e853;
+  margin: 0 0 40px 0;
+}
+
+.arrow_box {
+	position: relative;
+	border-radius: 10px;
+	background-color: #000;
+	border: 1px solid #d16;
+	padding: 20px 20px 30px 20px;
+}
+.arrow_box:after, .arrow_box:before {
+	top: 100%;
+	left: 10%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-top-color: #000;
+	border-width: 20px;
+	margin-left: -20px;
+}
+.arrow_box:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-top-color: #d16;
+	border-width: 21px;
+	margin-left: -21px;
+}
+
+.circular {
+	width: 120px;
+	height: 120px;
+	border-radius: 60px;
+	-webkit-border-radius: 60px;
+	-moz-border-radius: 60px;
+	background: url("../images/cn.jpg") no-repeat;
+}
+
+figure{
+	padding: 0 0 20px 0;
+	margin: 0;
+}
+
+figcaption{
+	color: #aaa;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
