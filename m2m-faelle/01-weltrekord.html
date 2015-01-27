@@ -4,10 +4,14 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/pygment_trac.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/mockup2markup.css" media="screen">
-
+    <link rel="stylesheet" type="text/css" href="../assets/css/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../assets/css/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../assets/css/mockup2markup.css" media="screen">
+	
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/sunburst.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	
     <title>Mockup2markup by cnoss // 01 Schlaue Marginalspalten</title>
   </head>
 
@@ -40,32 +44,35 @@
 		<div class="add_block">			
 			<p>Wie lassen sich die Marginalspalten elegant abbilden? Ein offensichtlicher Ansatz wäre das Anlegen von drei Spalten, diese floaten zu lassen und den Content darin zu verteilen. Aus verschiedenen Gründen ist diese Variante allerdings nicht optimal. Im Zuge der Lösungsfindung war es in diesem Fall hilfreich, sich die Funktion der Marginalinhalte zunächst zu verdeutlichen.</p>
 			
-			<p>Die Inhalte in den Marginalspalten haben einen Bezug zum Inhalt der Hauptspalte. Sie ergänzen ihn, geben Zusatzinformationen oder illustrieren den Hauptinhalt mit Bildern. Darum sollten die Marginalspalten semantisch im Markup entsprechend zugehörig zur Hauptspalte sein. Diese Zugehörigkeit soll aber auch über das Layout transportiert werden. Also sollten sie vertikal möglichst nah am inhaltlichen Bezugspunkt in der Hauptspalte positioniert werden. Wir gehen hierbei von beliebigem Inhalt <span class="frage">Vielleicht noch mal genauer darauf eingehen, was mit beliebigen Inhalt gemeint ist.</span> aus, so dass eine Platzierung via <code>"top"</code> oder <code>"margin"</code> nicht zielführend ist.</p>
+			<p>Die Inhalte in den Marginalspalten haben einen Bezug zum Inhalt der Hauptspalte. Sie ergänzen ihn, geben Zusatzinformationen oder illustrieren den Hauptinhalt mit Bildern. Darum sollten die Marginalspalten semantisch im Markup entsprechend zugehörig zur Hauptspalte sein. Diese Zugehörigkeit soll aber auch über das Layout transportiert werden. Also sollten sie vertikal möglichst nah am inhaltlichen Bezugspunkt in der Hauptspalte positioniert werden. Wir gehen hierbei von beliebigem Inhalt aus, d.h. wir wissen nicht, wie lang der Haupttext und die Marginalinhalte laufen. Daher ist eine Platzierung via <code>"top"</code> oder <code>"margin"</code> nicht realisierbar.</p>
 		</div>
 		
 		<h2>Lösungsansatz</h2>
 		
 		<div class="add_block">
 			<p>Um der Anforderung gerecht zu werden, den Content möglichst im Fluss zu halten, wurden die Marginalinhalte zunächst in eigene Container gepackt und mit einer Klasse ausgezeichnet.</p>
-			<span class="frage">Ich würde noch eine kleine JS-Bibliothek einbinden, die Syntaxhighliting macht. <br> Zudem würde ich auch  noch das Markup des umschließenden Containers, für ein besseres Verständnis, hinzufügen. Zudem sieht man dann auch das Markup für die CSS-Regel #wrap > article.</span>
-			<pre>
-&lt;h1&gt;Headline&lt;/h1&gt;
-&lt;p&gt;Haupttext&lt;/p&gt;
-&lt;div class="marginalie_rechts"&gt;Marginaltext&lt;/div&gt;
-    &lt;p&gt;weitere Haupttext&lt;/p&gt;
-&lt;div class="marginalie_rechts"&gt;Marginaltext&lt;/div&gt;</pre>
+			<pre><code>
+&lt;div id=&quot;wrap&quot; class=&quot;clearfix&quot;&gt; 
+    …				
+    &lt;h1&gt;Headline&lt;/h1&gt;
+    &lt;p&gt;Haupttext&lt;/p&gt;
+    &lt;div class="marginalie_rechts"&gt;Marginaltext&lt;/div&gt;
+        &lt;p&gt;weitere Haupttext&lt;/p&gt;
+    &lt;div class="marginalie_rechts"&gt;Marginaltext&lt;/div&gt;
+    …
+&lt;/div&gt;</code></pre>
 
 			<p>Der Grundgedanke war dann, eine Hauptspalte zu definieren und die Marginalinhalte nach rechts und links heraus zu ziehen. Damit sitzen die Marginalinhalte rechts und links neben dem Hauptinhalt und in der Vertikalen bleiben sie im Dokumentfluss, also dem Hauptinhalt zugeordnet. 
 			
 			<pre><code>/* Hauptspalte in die Mitte schieben */
 #wrap > article {
-	width: 460px;
-	margin-left: 240px;
+    width: 460px;
+    margin-left: 240px;
 }
 /* linke Marginalspalte nach links ziehen */
 .marginalie_links {
-	margin-left: -240px;
-	width: 220px;
+    margin-left: -240px;
+    width: 220px;
 }
 
 /* Rechte Marginalspalte nach rechts ziehen */
@@ -78,14 +85,14 @@
 			
 			<p>Jetzt galt es den Negativraum zu eliminieren, den die Marginalinhalte in der Hauptspalte hinterlassen haben. Dazu definieren wir die Höhe der Marginalinhalte einfach mit <code>0</code>.
 				<pre><code>.marginalie_links {
-	margin-left: -240px;
-	height: 0;
-	width: 220px;
+    margin-left: -240px;
+    height: 0;
+    width: 220px;
 }
 .marginalie_rechts {
-	margin-left: 480px;
-	height: 0;
-	width: 220px;
+    margin-left: 480px;
+    height: 0;
+    width: 220px;
 }</code></pre>			
 				<a href="http://codepen.io/cnoss/pen/zxZaBL" class="btn" target="_blank">Schritt 2 als CodePen anschauen</a>
 			</p>
@@ -93,22 +100,22 @@
 			<p>Hier das CSS für den ersten Breakpoint:
 				<pre><code>@media (max-width:950px){
 	
-	#wrap, footer{
-		width: 740px;
-	}
+    #wrap, footer{
+        width: 740px;
+    }
 	
-	/* Hauptspalte nach links ziehen */
-	#wrap > article {
-		margin-left: 0;
+    /* Hauptspalte nach links ziehen */
+    #wrap > article {
+         margin-left: 0;
 	}
 	
 	/* linke Marginalspalte wieder in die 
 		Hauptspalte fließen lassen */
-	.marginalie_links {
-		margin-left: 0;
-		height: auto;
-		width: auto;
-	}
+    .marginalie_links {
+        margin-left: 0;
+        height: auto;
+        width: auto;
+    }
 }</code></pre>
             <span class="frage">Vielleicht ist an dieser Stelle noch das CSS für den zweiten Breakpoint interessant.</span>
 				<a href="http://codepen.io/cnoss/pen/WbpYKP" class="btn" target="_blank">letzten Schritt als CodePen anschauen</a>

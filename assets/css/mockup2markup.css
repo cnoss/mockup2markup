@@ -31,7 +31,7 @@
 }
 
 #main_content h2:after{
-	content: url('../images/pfeilchen.svg');
+	content: url('../img/pfeilchen.svg');
 	position: absolute;
 	right: 0;
 	top: 20px;
@@ -106,12 +106,17 @@ hr {
 	border-radius: 60px;
 	-webkit-border-radius: 60px;
 	-moz-border-radius: 60px;
-	background: url("../images/cn.jpg") no-repeat;
+	background: url("../img/cn.jpg") no-repeat;
 }
 
 figure{
 	padding: 0 0 20px 0;
 	margin: 0;
+
+}
+
+figure img{
+	width: 100%;
 }
 
 figcaption{
@@ -121,16 +126,16 @@ figcaption{
 }
 
 .step{
-	background: url("../images/step-1.svg") no-repeat;
+	background: url("../img/step-1.svg") no-repeat;
 	background-size: 60px 60px;
 	min-height: 50px;
 	padding-left: 70px;
 	margin-top: 30px;
 }
 
-.step-1{ background-image: url("../images/step-1.svg"); color: #4A90E2;}
-.step-2{ background-image: url("../images/step-2.svg"); color: #7ED321; }
-.step-3{ background-image: url("../images/step-3.svg"); color: #d16; }
+.step-1{ background-image: url("../img/step-1.svg"); color: #4A90E2;}
+.step-2{ background-image: url("../img/step-2.svg"); color: #7ED321; }
+.step-3{ background-image: url("../img/step-3.svg"); color: #d16; }
 
 header h1{
 	margin-bottom: 30px;
